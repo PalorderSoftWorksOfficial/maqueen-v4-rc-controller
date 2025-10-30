@@ -6,7 +6,8 @@
         "radio": "*",
         "microphone": "*",
         "datalogger": "*",
-        "maqueen": "github:dfrobot/pxt-maqueen#v1.7.16"
+        "maqueen": "github:dfrobot/pxt-maqueen#v1.7.16",
+        "StringLib": "pkg:StringLib.json"
     },
     "files": [
         "main.blocks",
