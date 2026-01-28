@@ -4,21 +4,21 @@ PacketLib.onReceivePacket(function (pkt) {
 })
 
 input.onLogoEvent(TouchButtonEvent.Touched, function () {
-    PacketLib.sendPacket(0, PacketLib.stringToBuffer("stop"), "all", PacketLib.PacketFlags.AckRequired)
+    PacketLib.sendPacket(1, PacketLib.stringToBuffer("msg: stop"), "all", PacketLib.PacketFlags.AckRequired)
 })
 
 input.onButtonPressed(Button.A, function () {
-    PacketLib.sendPacket(0, PacketLib.stringToBuffer("left"), "all", PacketLib.PacketFlags.AckRequired)
+    PacketLib.sendPacket(1, PacketLib.stringToBuffer("msg: left"), "all", PacketLib.PacketFlags.AckRequired)
 })
 
 input.onGesture(Gesture.Shake, function () {
-    PacketLib.sendPacket(0, PacketLib.stringToBuffer("backwards"), "all", PacketLib.PacketFlags.AckRequired)
+    PacketLib.sendPacket(1, PacketLib.stringToBuffer("msg: backwards"), "all", PacketLib.PacketFlags.AckRequired)
 })
 
 input.onButtonPressed(Button.AB, function () {
-    PacketLib.sendPacket(0, PacketLib.stringToBuffer("forward"), "all", PacketLib.PacketFlags.AckRequired)
+    PacketLib.sendPacket(1, PacketLib.stringToBuffer("msg: forward"), "all", PacketLib.PacketFlags.AckRequired)
 })
 
 input.onButtonPressed(Button.B, function () {
-    PacketLib.sendPacket(0, PacketLib.stringToBuffer("right"), "all", PacketLib.PacketFlags.AckRequired)
+    PacketLib.sendPacket(1, PacketLib.stringToBuffer("right"), "all", PacketLib.PacketFlags.AckRequired)
 })
