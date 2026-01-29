@@ -1,8 +1,3 @@
-PacketLib.onReceivePacket(function (pkt) {
-    let msg = PacketLib.bufferToString(pkt.payload)
-    basic.showString(msg)
-})
-
 input.onLogoEvent(TouchButtonEvent.Touched, function () {
     PacketLib.sendPacket(1, PacketLib.stringToBuffer("msg: stop"), "all", PacketLib.PacketFlags.AckRequired)
 })
